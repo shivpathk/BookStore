@@ -14,7 +14,7 @@ const EditProfile = ({ id, email, name, phone, address, dob, gender, image }) =>
 
     const onSubmit = async (data) => {
         document.getElementById('my_modal_edit').close()
-        await axios.put(`http://localhost:4001/user/profile/${id}`, data)
+        await axios.put(`https://bookstore-backend-m8u6.onrender.com/user/profile/${id}`, data)
             .then((res)=>{
                 if(res.data){
                     toast.success("Profile Updated Successfully")

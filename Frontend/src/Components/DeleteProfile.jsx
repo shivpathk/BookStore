@@ -10,7 +10,7 @@ const DeleteProfile = () => {
     const handleDelete = async () => {
         try {
             const id = JSON.parse(localStorage.getItem("User"))._id
-            await axios.delete(`http://localhost:4001/user/profile/${id}`)
+            await axios.delete(`https://bookstore-backend-m8u6.onrender.com/user/profile/${id}`)
             setAuth({
                 ...auth,
                 user:null

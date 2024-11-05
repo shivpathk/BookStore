@@ -13,7 +13,7 @@ const Card = ({ item }) => {
       const userInfo = localStorage.getItem("User");
       const userId = JSON.parse(userInfo)._id;
       const res = await axios.get(
-        `http://localhost:4001/user/profile/${userId}`
+        `https://bookstore-backend-m8u6.onrender.com/user/profile/${userId}`
       );
       console.log(res.data.role)
       if (res.data.role === "Admin") {

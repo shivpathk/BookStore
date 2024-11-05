@@ -17,7 +17,7 @@ const DeleteBook = () => {
 
     const onSubmit = async (data) => {
         document.getElementById('modal_delete_book').close()
-        const bookData = await axios.get(`http://localhost:4001/book/${data.id}`)
+        const bookData = await axios.get(`https://bookstore-backend-m8u6.onrender.com/book/${data.id}`)
         if(bookData.data){
             setBook(bookData.data)
             document.getElementById('modal_delete_book_confirm').showModal()
@@ -28,7 +28,7 @@ const DeleteBook = () => {
 
     const handleDelete = async () => {
         try {
-            await axios.delete(`http://localhost:4001/book/${book._id}`)
+            await axios.delete(`https://bookstore-backend-m8u6.onrender.com/book/${book._id}`)
             toast.success("Book Deleted Successfully")
             setTimeout(()=>{
                 window.location.reload()

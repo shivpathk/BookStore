@@ -19,7 +19,7 @@ const EditBook = () => {
         e.preventDefault()
         document.getElementById('modal_edit_book').close()
         const data = document.querySelector('#book_id_edit').value
-        const bookData = await axios.get(`http://localhost:4001/book/${data}`)
+        const bookData = await axios.get(`https://bookstore-backend-m8u6.onrender.com/book/${data}`)
         if(bookData.data){
             setBook(bookData.data)
             document.getElementById('modal_edit_book_confirm').showModal()
@@ -31,7 +31,7 @@ const EditBook = () => {
     const onSubmit = async (data) => {
         try {
             document.getElementById('modal_edit_book_confirm').close()
-            await axios.put(`http://localhost:4001/book/${book._id}`,data)
+            await axios.put(`https://bookstore-backend-m8u6.onrender.com/book/${book._id}`,data)
             toast.success("Book Updated Successfully")
             setTimeout(()=>{
                 window.location.reload()

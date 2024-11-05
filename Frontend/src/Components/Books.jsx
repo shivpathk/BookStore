@@ -14,7 +14,7 @@ const Books = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('http://localhost:4001/books')
+                const res = await axios.get('https://bookstore-backend-m8u6.onrender.com/books')
                 setBooks(res.data)
             } catch (error) {
                 console.log(error)
@@ -31,7 +31,7 @@ const Books = () => {
         const userInfo = localStorage.getItem("User");
         const userId = JSON.parse(userInfo)._id;
         const res = await axios.get(
-            `http://localhost:4001/user/profile/${userId}`
+            `https://bookstore-backend-m8u6.onrender.com/user/profile/${userId}`
         );
         console.log(res.data.role)
         if (res.data.role === "Admin") {

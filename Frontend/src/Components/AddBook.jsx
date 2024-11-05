@@ -13,7 +13,7 @@ const AddBook = () => {
 
     const onSubmit = async (data) => {
         document.getElementById('modal_add_book').close()
-        await axios.post(`http://localhost:4001/book`, data)
+        await axios.post(`https://bookstore-backend-m8u6.onrender.com/book`, data)
             .then((res)=>{
                 if(res.data){
                     toast.success("Book Added Successfully")

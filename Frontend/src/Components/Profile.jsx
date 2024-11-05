@@ -15,7 +15,7 @@ const Profile = () => {
         const userId = JSON.parse(userInfo)._id;
 
         const res = await axios.get(
-          `http://localhost:4001/user/profile/${userId}`
+          `https://bookstore-backend-m8u6.onrender.com/user/profile/${userId}`
         );
         setUser(res.data);
       } catch (error) {
