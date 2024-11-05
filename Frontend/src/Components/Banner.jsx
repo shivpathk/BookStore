@@ -19,8 +19,8 @@ const Banner = () => {
             <div className="max-w-screen-2xl container mx-auto md:px-20 px-7 flex flex-col lg:flex-row justify-center items-center mt-12 pt-12 md:mt-0" style={{ height: "100vh" }}>
                 <div className="w-full lg:w-1/2 mt-4 md:mt-0 order-2 md:order-1">
                     <div className="space-y-6 md:space-y-12">
-                        <h1 className="text-3xl md:text-5xl font-bold">Hello, welcome to the Book Store and learn something{" "}<span className="text-pink-500">new everyday!!</span></h1>
-                        <p className="text-xl">BookStore is your one-stop destination for a world of literature. Explore a vast collection of books in both Hindi and English, all available to read online or download for offline enjoyment. Whether you are a seasoned reader or just starting your literary journey, BookStore offers a seamless and user-friendly experience. Enjoy all these features absolutely free :)</p>
+                        <h1 className="text-2xl md:text-5xl font-bold">Hello, welcome to the Book Store and learn something{" "}<span className="text-pink-500">new everyday!!</span></h1>
+                        <p className="text-sm md:text-xl">BookStore is your one-stop destination for a world of literature. Explore a vast collection of books in both Hindi and English, all available to read online or download for offline enjoyment. Whether you are a seasoned reader or just starting your literary journey, BookStore offers a seamless and user-friendly experience. Enjoy all these features absolutely free :)</p>
                     </div>
                     <div className="mt-5 md:mt-15">
                         <label className="input input-bordered flex items-center gap-2 shadow-md bg-base-200 dark:bg-slate-900 dark:text-white dark:border-white">

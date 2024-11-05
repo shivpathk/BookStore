@@ -67,11 +67,11 @@ const FreeBook = () => {
         <>
             <div className="max-w-screen-2xl container mx-auto md:px-20 px-7" >
                 <div className='mt-20 mb-10 md:mt-0'>
-                    <h1 className='font-bold text-2xl pd-2 mb-5'>
+                    <h1 className='font-bold text-xl md:text-2xl pd-2 mb-5'>
                         Free Offered Books
                     </h1>
 
-                    <p>Here are some of the free books which we give you without any hidden costs or subscriptions, for accessing all books at your convenience you can visit Books section from the navigation bar and get your desired book, you just have to signup and login for accessing our all books.</p>
+                    <p className="text-sm md:text-xl">Here are some of the free books which we give you without any hidden costs or subscriptions, for accessing all books at your convenience you can visit Books section from the navigation bar and get your desired book, you just have to signup and login for accessing our all books.</p>
                 </div>
                 <div className='m-5'>
                     <div className="slider-container">
