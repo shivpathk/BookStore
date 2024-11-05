@@ -2,6 +2,8 @@
 
 Welcome to the **BOOKSTORE** web app! This is a fully responsive, visually appealing web application built using the MERN stack (MongoDB, Express.js, React, Node.js) with Vite and styled with Tailwind CSS.
 
+I have built this web app with the MERN stack (MongoDB, Express, React, Node.js), Vite, and Tailwind CSS. The application includes an admin dashboard for publishing, editing, and deleting books, as well as user functionality for browsing and reading. Integrated dark/light modes, secure signup and login, and protected routes to enhance user experience and security. This project highlights my skills in full-stack development, responsive design, and building secure, high-performance applications.
+
 ## 🌟 Features
 
 - Built with **Vite** for fast, efficient builds.
