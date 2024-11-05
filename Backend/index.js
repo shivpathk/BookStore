@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 app.use(cors({
-    origin:"https://bookstore-frontend-nd98.onrender.com/",
+    origin:"https://bookstore-frontend-nd98.onrender.com",
     methods:["POST","GET","PUT","DELETE"],
     credentials:true
 }))
